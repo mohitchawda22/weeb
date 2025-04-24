@@ -13,13 +13,21 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Weeb</title>
 </head>
 
 <body>
 
-    <header class="container d-flex justify-content-center align-items-center">
-        <nav class="navbar navbar-expand-md">
+    <header class="container d-flex justify-content-center align-items-center sticky-top">
+        <nav class="navbar navbar-expand-md" id="navbar">
             <div class="container justify-content-between">
                 <a class="pe-5" href="#">
                     <h5 class="my-auto">weeb</h5>
@@ -32,10 +40,12 @@
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Weeb</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-start align-items-center flex-grow-1 pe-5 my-auto" id="nav-menu">
+                        <ul class="navbar-nav justify-content-start align-items-center flex-grow-1 pe-5 my-auto"
+                            id="nav-menu">
                             <!-- <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Home</a>
                             </li>
@@ -63,7 +73,8 @@
         <div class="container">
             <div class="text-center hero-desc">
                 <h1>Design <span class="first-span">Faster</span> <span class="second"> & </span>Better</h1>
-                <p class="">Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.<br/>Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
+                <p class="">Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem
+                    mauris.<br />Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
                 <div class="d-flex gap-3 justify-content-center align-items-center hero-btn">
                     <a href="" class="join-btn">Join Now</a>
                     <a href="" class="view-btn">View Demo</a>
@@ -87,44 +98,206 @@
                 <img src="./assets/images/Logo4.svg" alt="">
                 <img src="./assets/images/Logo4.svg" alt=""> -->
             </div>
-            </div>
+        </div>
     </section>
 
-    <!-- <section class="feature-section">
+    <section class="feature-section">
         <div class="container">
             <div class="row feature-desc">
                 <div class="col-md-8 col-sm-12 align-content-center feature-desc1 ">
                     <h1>Discover</h1>
-                    <h4 class=""><span class="span">Unlimited</span> ideas for your next great projects</h4>
-                    <p class="para">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                    <h4 class=""><span class="span">Unlimited</span> <span class="rectangle-box">ideas</span> for your
+                        next great projects</h4>
+                    <p class="para">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.Ultrices nibh
+                        sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
                     <a href="">Discover Ideas <img src="./assets/images/arrow.svg" alt="" class="ps-2"></a>
                 </div>
-                <div class="col-md-4 col-sm-12 my-auto feature-img" >
+                <div class="col-md-4 col-sm-12 my-auto feature-img">
                     <img src="./assets/images/Shapes.png" alt="">
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="discover-section">
+    <section class="powerful-section">
         <div class="container">
-            <div class="row justify-content-between discover-desc">
-                <div class="col-md-5 col-sm-12 align-content-center ">
+            <div class="row justify-content-between powerful-desc">
+                <div class="col-md-5 col-sm-12 align-content-center p-4 ">
                     <h1>Powerful</h1>
                     <h2>All the tools you can imagine</h2>
-                    <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                    <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit
+                        gravida ac, rutrum molestie adipiscing lacinia.</p>
                 </div>
                 <div class="col-md-7 col-sm-12">
                     <img src="./assets/images/Desktop1.png" alt="">
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+
+    <section class="customer-section">
+        <div class="container">
+            <div class="row justify-content-between customer-desc">
+                <div class="col-md-8 col-sm-12">
+                    <h2>Customers</h2>
+                    <h1><span class="span">Target</span> <span class="square-box">cu</span>stomers with our powerful AI
+                        kit</h1>
+                    <p class="para">Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc.Ultrices nibh
+                        sapien elit gravida ac, rutrum molestie adipiscing lacinia.</p>
+                    <a href="">How Targeting Customers Works <img src="./assets/images/arrow.svg" class="ps-3"
+                            alt=""></a>
+                </div>
+                <div class="col-md-4 col-sm-12 align-content-center">
+                    <img src="./assets/images/Shapes2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="powerful-section">
+        <div class="container">
+            <div class="row justify-content-between powerful-desc">
+                <div class="col-md-5 col-sm-12 align-content-center p-4 ">
+                    <h1>Speed</h1>
+                    <h2>Work fast, w/o interruptions</h2>
+                    <p>Scelerisque auctor dolor diam tortor, fames faucibus non interdum nunc. Ultrices nibh sapien elit
+                        gravida ac, rutrum molestie adipiscing lacinia.</p>
+                </div>
+                <div class="col-md-7 col-sm-12">
+                    <img src="./assets/images/Desktop1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row testimonial-desc">
+                <div class="col-md-4 col-sm-12 align-content-center">
+                    <h3>Testimonials</h3>
+                    <h2><span>Bigapp</span> got to the next level</h2>
+                    <a href="">View Case Study <img src="./assets/images/arrow.svg" alt="" class="ps-3"></a>
+                </div>
+                <div class="col-md-4 col-sm-12 testimonial-img">
+                    <img src="./assets/images/Mobile-App-Placeholder-.png" alt="">
+                </div>
+                <div class="col-md-4 col-sm-12 align-content-center user-desc">
+                    <p>“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis
+                        scelerisque faucibus.”</p>
+                    <div class="d-flex pt-3">
+                        <img src="./assets/images/User Thumb.png" alt="">
+                        <div class="my-auto ps-3">
+                            <p>Rwanda Melflor</p>
+                            <h6>Co-founder Bigapp</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="slider-section">
+        <div class="container">
+            <div class="d-flex align-content-center justify-content-between align-items-center slider-heading">
+                <h2>Design events near your</h2>
+                <a href="" class="my-auto">Explore Events <img src="./assets/images/arrow-right.svg" class="ps-3"
+                        alt=""></a>
+            </div>
+            <div class="wrapper">
+                <div class="slider-cards">
+                    <div class="event-card">
+                        <img src="./assets/images/Picture.png" class="card-img-top" alt="">
+                        <div class="card-desc">
+                            <h5 class="card-title">Design Thinking</h5>
+                            <p class="card-text">Wild Horse Event</p>
+                            <a href="" class="d-flex">Buy Tickets<img src="./assets/images/arrow-right.svg" alt=""
+                                    class="ps-3"></a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="./assets/images/Picture.png" class="card-img-top" alt="">
+                        <div class="card-desc">
+                            <h5 class="card-title">Design Thinking</h5>
+                            <p class="card-text">Wild Horse Event</p>
+                            <a href="" class="d-flex">Buy Tickets<img src="./assets/images/arrow-right.svg" alt=""
+                                    class="ps-3"></a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="./assets/images/Picture.png" class="card-img-top" alt="">
+                        <div class="card-desc">
+                            <h5 class="card-title">Design Thinking</h5>
+                            <p class="card-text">Wild Horse Event</p>
+                            <a href="" class="d-flex">Buy Tickets<img src="./assets/images/arrow-right.svg" alt=""
+                                    class="ps-3"></a>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="./assets/images/Picture.png" class="card-img-top" alt="">
+                        <div class="card-desc">
+                            <h5 class="card-title">Design Thinking</h5>
+                            <p class="card-text">Wild Horse Event</p>
+                            <a href="" class="d-flex">Buy Tickets<img src="./assets/images/arrow-right.svg" alt=""
+                                    class="ps-3"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
 
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script>
+        $('.slider-cards').slick({
+            dots: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 998,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                    }
+                }
+            ]
+        });
+    </script>
 </body>
 
 </html>

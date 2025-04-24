@@ -7,7 +7,7 @@ const imageLinks = [
 ];
 
 const image = imageLinks.map(img => {
-  return `<img src="${img}" alt="logo" />`;
+  return `<img src="${img}" class="p-3" alt="logo" />`;
 });
 
 const images = image.join('');
@@ -28,3 +28,12 @@ const navItem=navItems.map(links=>{
 
 const links=navItem.join('')
 navMenu.innerHTML=links
+
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
