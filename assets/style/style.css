@@ -314,6 +314,45 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
+.footer-section {
+  background: #FFFFFF;
+  padding: 80px 0px 0px 0px;
+  border-top: 2px solid #E2E8F0 !important;
+}
+.footer-section .footer-desc {
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+.footer-section .footer-desc .footer-logo h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: black !important;
+}
+.footer-section .footer-desc .footer-links h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #94A3B8 !important;
+  padding: 12px;
+}
+.footer-section .footer-desc .footer-links ul {
+  padding-left: 0;
+}
+.footer-section .footer-desc .footer-links ul li {
+  padding: 12px;
+  text-decoration: none;
+  list-style: none;
+}
+.footer-section .footer-desc .footer-links ul li a {
+  color: #0F172A !important;
+  font-weight: 400;
+}
+.footer-section .footer-trademark {
+  padding: 49px 0px;
+}
+.footer-section .footer-trademark p {
+  font-weight: 400;
+  color: #0F172A !important;
+}
+
 @media (max-width: 480px) {
   .hero-section {
     padding-top: 48px;
@@ -425,6 +464,21 @@ p, h1, h2, h3, h4, h5, h6 {
     right: 120px !important;
     top: 110% !important;
   }
+  .footer-section {
+    padding: 48px 0px;
+  }
+  .footer-section .footer-desc {
+    text-align: center;
+  }
+  .footer-section .footer-desc h4 {
+    padding-bottom: 48px;
+  }
+  .footer-section .footer-trademark {
+    justify-content: center !important;
+  }
+  .footer-section .footer-trademark p {
+    padding-bottom: 24px;
+  }
 }
 @media (max-width: 768px) {
   .offcanvas-body > ul {
@@ -476,5 +530,21 @@ p, h1, h2, h3, h4, h5, h6 {
   }
   .testimonial-section .testimonial-desc .user-desc {
     text-align: left;
+  }
+  .footer-section {
+    padding: 48px 0px;
+  }
+  .footer-section .footer-desc {
+    text-align: center;
+  }
+  .footer-section .footer-desc h4 {
+    padding-bottom: 48px;
+  }
+  .footer-section .footer-trademark {
+    justify-content: center !important;
+    flex-direction: column;
+  }
+  .footer-section .footer-trademark p {
+    padding-bottom: 24px;
   }
 }/*# sourceMappingURL=style.css.map */

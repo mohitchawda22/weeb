@@ -338,6 +338,51 @@ p,h1,h2,h3,h4,h5,h6{
     display: none !important;
 }
 
+.footer-section{
+    background: $white;
+    padding: 80px 0px 0px 0px;
+    border-top: 2px solid $blue-gray-200 !important;
+    .footer-desc{
+        border-bottom: 1px solid $blue-gray-200 !important;
+        .footer-logo{
+            h4{
+                font-size: 32px;
+                font-weight: 700;
+                color: $black !important;
+            }
+        // gap: 7rem;
+        }
+        .footer-links{
+            h6{
+                font-size: 16px;
+                font-weight: 500;
+                color: $blue-gray-400 !important;
+                padding: 12px;
+            }
+            ul{
+                padding-left: 0;
+                li{
+                    padding: 12px;
+                    text-decoration: none;
+                    list-style: none;
+                    a{
+                        color: $blue-gray-900 !important;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .footer-trademark{
+        padding: 49px 0px;
+        p{
+            font-weight: 400;
+            color: $blue-gray-900 !important;
+        }
+        
+    }
+}
+
 @media (max-width:480px) {
     .hero-section{
         padding-top: 48px;
@@ -455,11 +500,27 @@ p,h1,h2,h3,h4,h5,h6{
     .slick-prev {
         // display: static !important;
         left: 100px !important;
-        top:110% !important
+        top:110% !important;
     }
     .slick-next{
         right: 120px !important;
         top:110% !important
+    }
+
+    .footer-section{
+        padding: 48px 0px;
+        .footer-desc{
+            text-align: center;
+            h4{
+                padding-bottom: 48px;
+            }
+        }
+        .footer-trademark{
+            justify-content: center !important;
+            p{
+                padding-bottom: 24px;
+            }
+        }
     }
 }
 
@@ -517,6 +578,22 @@ p,h1,h2,h3,h4,h5,h6{
             }
             .user-desc{
                 text-align: left;   
+            }
+        }
+    }
+    .footer-section{
+        padding: 48px 0px;
+        .footer-desc{
+            text-align: center;
+            h4{
+                padding-bottom: 48px;
+            }
+        }
+        .footer-trademark{
+            justify-content: center !important;
+            flex-direction: column;
+            p{
+                padding-bottom: 24px;
             }
         }
     }
