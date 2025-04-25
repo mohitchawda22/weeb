@@ -29,15 +29,15 @@ const navItem=navItems.map(links=>{
 const links=navItem.join('')
 navMenu.innerHTML=links
 
-window.addEventListener("scroll", function () {
-  const navbar = document.getElementById("navbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
-
+window.addEventListener("scroll",function(){
+const navbar=document.getElementById("navbar")
+if (window.scrollY > 50){
+  navbar.classList.add("scrolled");
+  console.log("scroll");
+}else{
+  navbar.classList.remove("scrolled");
+}
+})
 
 const eventCardImage = [
   {img:'./assets/images/Picture.png',title:"Design Thinking",desc:"Wild Horse Event",badge:"Design Thinking"},
@@ -68,22 +68,22 @@ sliderCard.innerHTML = eventCards;
 
 
 
-const footerIcons = [
-{icon:'/assets/images/youtube.svg',href:"https://www.youtube.com/",title:"youtube"},
-{icon:'/assets/images/facebook.svg',href:"https://www.facebook.com/",title:"facebook"},
-{icon:'/assets/images/x.svg',href:"https://x.com/",title:"x"},
-{icon:'/assets/images/insta.svg',href:"https://www.instagram.com/",title:"instagram"},
-{icon:'/assets/images/linkdin.svg',href:"https://www.linkedin.com/",title:"linkedin"},
-];
+// const footerIcons = [
+// {icon:'/assets/images/youtube.svg',href:"https://www.youtube.com/",title:"youtube"},
+// {icon:'/assets/images/facebook.svg',href:"https://www.facebook.com/",title:"facebook"},
+// {icon:'/assets/images/x.svg',href:"https://x.com/",title:"x"},
+// {icon:'/assets/images/insta.svg',href:"https://www.instagram.com/",title:"instagram"},
+// {icon:'/assets/images/linkdin.svg',href:"https://www.linkedin.com/",title:"linkedin"},
+// ];
 
-const footericons = document.getElementById('footer-icons');
-const footerIcon = footerIcons.map(icon => {
-  return `<a href="${icon.href
-  }" title="${icon.title}" target="_blank"><img src="${icon.icon}" alt=""></a>`;
-});
+// const footericons = document.getElementById('footer-icons');
+// const footerIcon = footerIcons.map(icon => {
+//   return `<a href="${icon.href
+//   }" title="${icon.title}" target="_blank"><img src="${icon.icon}" alt=""></a>`;
+// });
 
-const icons = footerIcon.join('');
-footericons.innerHTML = icons;
+// const icons = footerIcon.join('');
+// footericons.innerHTML = icons;
 
 const productLinks = [
   'Pricing',
