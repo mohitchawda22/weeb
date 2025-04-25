@@ -31,7 +31,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 .join-btn{
-    padding: 12px;
+    padding: 12px 28px;
     background: $purple-600;
     border: 2px solid $purple-600;
     border-radius: 8px;
@@ -72,6 +72,7 @@ p,h1,h2,h3,h4,h5,h6{
             font-weight: 500;
             line-height: 24px;
             color: $white !important;
+            letter-spacing: 0.5px;
         }
     }
     .nav-link{
@@ -108,7 +109,7 @@ p,h1,h2,h3,h4,h5,h6{
         }
 
         h1 >span:nth-child(1){
-            text-decoration:$purple-400 underline ;
+            border-bottom: 5px solid $purple-400 ;
         }
 
         h1 > span:nth-child(2){
@@ -123,7 +124,10 @@ p,h1,h2,h3,h4,h5,h6{
             padding: 32px 0px;
         }
     }
-    .hero-btn>.join-btn{
+    .hero-btn{
+        padding-top: 32px;
+    }
+    .hero-btn> li>.join-btn{
         padding: 16px 40px;
     }
     .hero-img{
@@ -166,7 +170,7 @@ p,h1,h2,h3,h4,h5,h6{
             left: 0;
             right: 0;
             bottom: 0;
-            border: 3px solid #ff6b00;
+            border: 3px solid $orange-700;
             z-index: -1;
         }
     }
@@ -175,6 +179,7 @@ p,h1,h2,h3,h4,h5,h6{
         font-weight: 700;
         padding: 32px 0px 16px 0px;
         text-transform: uppercase;
+        letter-spacing: 3px;
     }
     .para{
         padding: 32px 0px;
@@ -186,6 +191,7 @@ p,h1,h2,h3,h4,h5,h6{
         color: $white;
         font-size: 20px;
         font-weight: 500;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -197,6 +203,7 @@ p,h1,h2,h3,h4,h5,h6{
             font-size: 20px;
             font-weight: 500;
             text-transform: uppercase;
+            letter-spacing: 3px;
         }
         h2{
             font-size: 56px;
@@ -218,8 +225,11 @@ p,h1,h2,h3,h4,h5,h6{
             font-size: 72px;
             font-weight: 700;
         }
+        h1>span:nth-child(1){
+            color: $purple-400;
+        }
         .square-box{
-            background-color: #c9165d;
+            background-color: $pink-700;
             padding: 0 0.15em;
             margin-right: -2px;
         }
@@ -229,6 +239,7 @@ p,h1,h2,h3,h4,h5,h6{
         font-weight: 700;
         padding: 32px 0px 16px 0px;
         text-transform: uppercase;
+        letter-spacing: 3px;
     }
     .para{
         padding: 32px 0px;
@@ -240,6 +251,7 @@ p,h1,h2,h3,h4,h5,h6{
         color: $white;
         font-size: 20px;
         font-weight: 500;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -252,19 +264,21 @@ p,h1,h2,h3,h4,h5,h6{
             font-weight: 700;
             line-height: 100%;
             text-transform: uppercase;
+            letter-spacing: 3px;
         }
         h2{
             font-size: 56px;
             font-weight:800;
             padding: 16px 0px 32px 0px;
             span{
-                text-decoration: underline $purple-400;
+                border-bottom: 5px solid $purple-400;
             }
         }
 
         a{
             color: $white;
             font-weight: 500;
+            letter-spacing: 0.5px;
         }
         .user-desc{
             p{
@@ -279,9 +293,9 @@ p,h1,h2,h3,h4,h5,h6{
 .slider-section{
     padding: 80px 0px;
     background: $white;
-    // .wrapper{
-    //     // padding: 10px;
-    // }
+    .wrapper{
+        // position: relative;
+    }
     .slider-heading{
         padding-bottom:24px ;
         h2{
@@ -304,6 +318,7 @@ p,h1,h2,h3,h4,h5,h6{
         .card-title{
             color: $black !important;
             font-weight: 500;
+            font-size: 16px;
         }
         .card-text{
             color: $black !important;
@@ -316,8 +331,16 @@ p,h1,h2,h3,h4,h5,h6{
             font-weight: 500;
             line-height: 24px;
             color: $purple-600;
+            letter-spacing: 0.5px;
         }
     }
+}
+.badge {
+    background: $purple-100;
+    color: $purple-800 !important;
+    font-size: 14px !important;
+    border-radius: 4px !important;
+    font-weight: 400 !important;
 }
 
 .slick-prev:before, .slick-next:before{
@@ -350,7 +373,6 @@ p,h1,h2,h3,h4,h5,h6{
                 font-weight: 700;
                 color: $black !important;
             }
-        // gap: 7rem;
         }
         .footer-links{
             h6{
@@ -382,8 +404,23 @@ p,h1,h2,h3,h4,h5,h6{
         
     }
 }
+.custom-arrows-sm {
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.custom-arrows-sm img {
+    padding: 10px;
+    font-size: 18px;
+    color: purple;
+}
 
 @media (max-width:480px) {
+    .navbar{
+        padding:14.5px 24px !important;
+    }
     .hero-section{
         padding-top: 48px;
         .hero-desc{
@@ -497,15 +534,6 @@ p,h1,h2,h3,h4,h5,h6{
             }
         }
     }
-    .slick-prev {
-        // display: static !important;
-        left: 100px !important;
-        top:110% !important;
-    }
-    .slick-next{
-        right: 120px !important;
-        top:110% !important
-    }
 
     .footer-section{
         padding: 48px 0px;
@@ -525,6 +553,7 @@ p,h1,h2,h3,h4,h5,h6{
 }
 
 @media (max-width:768px) {
+
     .offcanvas-body > ul{
         padding: 0px !important;
     }
@@ -581,6 +610,17 @@ p,h1,h2,h3,h4,h5,h6{
             }
         }
     }
+    .slider-section{
+        .slider-heading{
+            flex-direction: column;
+            text-align: center;
+            h2{
+            padding-bottom: 16px;
+            font-size: 40px;
+            font-weight: 700;
+            }
+        }
+    }
     .footer-section{
         padding: 48px 0px;
         .footer-desc{
@@ -597,7 +637,7 @@ p,h1,h2,h3,h4,h5,h6{
             }
         }
     }
-    // .slick-prev,.slick-next{
-    //     display: none !important;
-    // }
+      .custom-arrows-sm {
+        display: flex !important;
+      }
 }

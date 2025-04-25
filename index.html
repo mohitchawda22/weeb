@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -61,7 +62,7 @@
                         </ul>
                         <ul class="d-flex justify-content-between align-items-center my-auto gap-4">
                             <li class=""><a href="" class="text-decoration-none">Log In</a></li>
-                            <li class="join-btn"><a href="" class="text-decoration-none">Join Now</a></li>
+                            <li class=""><a href="" class="text-decoration-none join-btn">Join Now</a></li>
                         </ul>
                     </div>
                 </div>
@@ -75,9 +76,9 @@
                 <h1>Design <span class="first-span">Faster</span> <span class="second"> & </span>Better</h1>
                 <p class="">Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem
                     mauris.<br />Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
-                <div class="d-flex gap-3 justify-content-center align-items-center hero-btn">
-                    <a href="" class="join-btn">Join Now</a>
-                    <a href="" class="view-btn">View Demo</a>
+                <div class="d-flex justify-content-center align-items-center hero-btn">
+                    <li><a href="" class="join-btn">Join Now</a></li>
+                    <li><a href="" class="view-btn">View Demo</a></li>
                 </div>
                 <div class="hero-img">
                     <img src="./assets/images/Desktop.png" alt="">
@@ -194,7 +195,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -206,9 +206,12 @@
                         alt=""></a>
             </div>
             <div class="wrapper">
-                <div class="slider-cards">
-                    <div class="event-card">
-                        <img src="./assets/images/Picture.png" class="card-img-top" alt="">
+                <div class="slider-cards" id="slider-card">
+                    <!-- <div class="event-card">
+                        <div class="position-relative">
+                        <img src="${img.img}" class="card-img-top" alt="">
+                        <span class="badge position-absolute top-0 start-0 m-3 px-2 py-1 z-1">${img.badge}</span>
+                        </div>
                         <div class="card-desc">
                             <h5 class="card-title">Design Thinking</h5>
                             <p class="card-text">Wild Horse Event</p>
@@ -242,9 +245,14 @@
                             <a href="" class="d-flex">Buy Tickets<img src="./assets/images/arrow-right.svg" alt=""
                                     class="ps-3"></a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
+            <div class="custom-arrows-sm d-md-none mt-3 text-center">
+                <img src="./assets/images/arrow-right-sm.svg" id="arrowPrevMobile" alt="">
+                <img src="./assets/images/arrow-left-sm.svg" id="arrowNextMobile" alt="">
+            </div>
+        </div>
         </div>
     </section>
 
@@ -258,38 +266,38 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-6 mb-3">
                             <h6 class="text-uppercase">Product</h6>
-                            <ul class="">
-                                <li>Pricing</li>
+                            <ul class="product-links" id="product-links">
+                                <!-- <li>Pricing</li>
                                 <li>Overview</li>
                                 <li>Browse</li>
                                 <li>Accessibility</li>
-                                <li>Five</li>
+                                <li>Five</li> -->
                             </ul>
                         </div>
                         <div class="col-md-3 col-sm-6 mb-3">
                             <h6 class="text-muted text-uppercase">Solutions</h6>
-                            <ul class="list-unstyled">
-                                <li>Brainstorming</li>
+                            <ul class="solution-links" id="solution-links">
+                                <!-- <li>Brainstorming</li>
                                 <li>Ideation</li>
                                 <li>Wireframing</li>
-                                <li>Research</li>
+                                <li>Research</li> -->
                             </ul>
                         </div>
                         <div class="col-md-3 col-sm-6 mb-3">
                             <h6 class="text-muted text-uppercase">Resources</h6>
-                            <ul class="list-unstyled">
-                                <li>Help Center</li>
+                            <ul class="resource-links" id="resource-links">
+                                <!-- <li>Help Center</li>
                                 <li>Blog</li>
-                                <li>Tutorials</li>
+                                <li>Tutorials</li> -->
                             </ul>
                         </div>
                         <div class="col-md-3 col-sm-6 mb-3">
                             <h6 class="text-muted text-uppercase">Company</h6>
-                            <ul class="list-unstyled">
-                                <li>About</li>
+                            <ul class="company-links" id="company-links">
+                                <!-- <li>About</li>
                                 <li>Press</li>
                                 <li>Events</li>
-                                <li>Careers</li>
+                                <li>Careers</li> -->
                             </ul>
                         </div>
                     </div>
@@ -298,12 +306,12 @@
 
             <div class="d-flex justify-content-between align-items-center flex-wrap footer-trademark">
                 <p class="">© 2023 Weeb, Inc. All rights reserved.</p>
-                <div class="d-flex gap-3 footer-icons">
-                    <a href="#" title="youtube"><img src="./assets/images/youtube.svg" alt=""></a>
-                    <a href="#" title="facebook"><img src="./assets/images/facebook.svg" alt=""></a>
-                    <a href="#" title="x"><img src="./assets/images/x.svg" alt="""></a>
-                    <a href="#" title="instagram"><img src="./assets/images/insta.svg" alt=""></a>
-                    <a href="#" title="linkdin"><img src="./assets/images/linkdin.svg" alt=""></a>
+                <div class="d-flex gap-3 footer-icons" id="footer-icons">
+                    <!-- <a href="https://www.youtube.com/" title="youtube"><img src="./assets/images/youtube.svg" alt=""></a>
+                    <a href="https://www.facebook.com/" title="facebook"><img src="./assets/images/facebook.svg" alt=""></a>
+                    <a href="https://x.com/" title="x"><img src="./assets/images/x.svg" alt="""></a>
+                    <a href="https://www.instagram.com/" title="instagram"><img src="./assets/images/insta.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/" title="linkdin" target=""><img src="./assets/images/linkdin.svg" alt=""></a> -->
                 </div>
             </div>
         </div>
@@ -327,6 +335,7 @@
             dots: true,
             slidesToShow: 3,
             slidesToScroll: 3,
+            arrows: true,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -346,6 +355,9 @@
                 {
                     breakpoint: 700,
                     settings: {
+                        prevArrow: $('#arrowPrevMobile'),
+                        nextArrow: $('#arrowNextMobile'),
+                        arrows: true,
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         autoplay: true,
