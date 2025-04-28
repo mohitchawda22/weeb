@@ -1,0 +1,38 @@
+@import "../../styles/colors.scss";
+
+.hero-section{
+    padding-top: 80px;
+    .hero-desc{
+        h1{
+            color: $white;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 110.00000000000001%;
+        }
+
+        h1 >span:nth-child(1){
+            border-bottom: 5px solid $purple-400 ;
+        }
+
+        h1 > span:nth-child(2){
+            color: $purple-600;
+        }
+        
+        p{
+            color: $white;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 160%;
+            padding: 32px 0px;
+        }
+    }
+    .hero-btn{
+        padding-top: 32px;
+    }
+    .hero-btn> li>.join-btn{
+        padding: 16px 40px;
+    }
+    .hero-img{
+        padding: 80px 0px;
+    }
+}

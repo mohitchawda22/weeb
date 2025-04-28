@@ -1,0 +1,249 @@
+@import "./styles/colors.scss";
+
+#root {
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: $blue-gray-900 !important;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none !important;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0px !important;
+    color: $white !important;
+}
+
+
+@media (max-width:480px) {
+    .navbar{
+        padding:14.5px 24px !important;
+    }
+    .hero-section{
+        padding-top: 48px;
+        .hero-desc{
+            h1{
+                font-size: 56px;
+            }  
+            p{
+                font-size: 16px;
+                line-height: 140%;
+            }
+        }
+        .hero-img{
+            padding: 48px 0px;
+        }
+    }
+    .companies-section{
+        .companies-desc{
+            h2{
+                font-size: 40px;
+                font-weight: 700;
+            }
+        }
+        .companies-img{
+            padding: 48px 0px;
+        }
+    }
+    .feature-section{
+        padding: 48px 0px;
+        .feature-desc{
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            flex-direction: column-reverse;
+    
+            p{
+                padding: 32px 0px 16px 0px;
+            }
+        }
+        .para{
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0 auto !important;
+        }
+        a{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .feature-img{
+            text-align: center;
+        }
+    }
+    .powerful-section{
+        padding: 48px 0px;
+        .powerful-desc{
+            flex-direction: column-reverse;
+            text-align: center;
+            h2{
+                font-size: 40px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .customer-section{
+        padding: 48px 0px;
+        .customer-desc{
+            flex-direction: column-reverse;
+            text-align: center;
+            h1{
+                font-size: 40px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0 auto !important;
+            }
+        }
+    }
+
+    .testimonial-section{
+        background:$purple-900;
+        padding: 48px 0px;
+        text-align: center;
+        .testimonial-desc{
+            h2{
+                font-size: 40px;
+                font-weight:700;
+            }
+            .testimonial-img{
+                padding-top: 32px;
+            }
+            .user-desc{
+                text-align: left;   
+            }
+        }
+    }
+    .slider-section{
+        padding: 48px 0px;
+        .slider-heading{
+            flex-direction: column;
+            text-align: center;
+            h2{
+            padding-bottom: 16px;
+            font-size: 40px;
+            font-weight: 700;
+            }
+        }
+    }
+
+    .footer-section{
+        padding: 48px 0px;
+        .footer-desc{
+            text-align: center;
+            h4{
+                padding-bottom: 48px;
+            }
+        }
+        .footer-trademark{
+            justify-content: center !important;
+            p{
+                padding-bottom: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .offcanvas-body > ul{
+        padding: 0px !important;
+    }
+
+    .offcanvas-body > ul>li{
+        margin-bottom: 24px;
+    }
+
+    .offcanvas-body > ul:nth-child(2){
+        flex-direction: column;
+    }
+    .feature-desc{
+        text-align: center;
+        flex-direction: column-reverse;
+        .para{
+            margin: 0 auto !important;
+        }
+    }
+    .powerful-desc{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    .customer-section{
+        padding: 48px 0px;
+        .customer-desc{
+            flex-direction: column-reverse;
+            text-align: center;
+            h1{
+                font-size: 40px;
+                font-weight: 700;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0 auto !important;
+            }
+        }
+    }
+
+    .testimonial-section{
+        background:$purple-900;
+        padding: 48px 0px;
+        text-align: center;
+        .testimonial-desc{
+            h2{
+                font-size: 40px;
+                font-weight:700;
+            }
+            .user-desc{
+                text-align: left;   
+            }
+        }
+    }
+    .slider-section{
+        .slider-heading{
+            flex-direction: column;
+            text-align: center;
+            h2{
+            padding-bottom: 16px;
+            font-size: 40px;
+            font-weight: 700;
+            }
+        }
+    }
+    .footer-section{
+        padding: 48px 0px;
+        .footer-desc{
+            text-align: center;
+            h4{
+                padding-bottom: 48px;
+            }
+        }
+        .footer-trademark{
+            justify-content: center !important;
+            flex-direction: column;
+            p{
+                padding-bottom: 24px;
+            }
+        }
+    }
+      .custom-arrows-sm {
+        display: flex !important;
+      }
+}

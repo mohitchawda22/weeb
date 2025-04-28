@@ -1,0 +1,87 @@
+@import "../../styles/colors.scss";
+
+.slider-section{
+    padding: 80px 0px;
+    background: $white;
+    // .wrapper{
+    //     // position: relative;
+    // }
+    .slider-heading{
+        padding-bottom:24px ;
+        h2{
+            color: $black !important;
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 110%;
+        }
+        a{
+            font-weight: 500;
+            line-height: 24px;
+            color: $purple-600;
+        }
+    }
+    .event-card{
+        padding: 0px 12px;
+        .card-desc{
+            padding-top: 24px;
+        }
+        .card-title{
+            color: $black !important;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .card-text{
+            color: $black !important;
+            font-size: 40px;
+            font-weight: 700;
+            padding-bottom: 16px;
+        }
+
+        a{
+            font-weight: 500;
+            line-height: 24px;
+            color: $purple-600;
+            letter-spacing: 0.5px;
+        }
+    }
+}
+.badge {
+    background: $purple-100;
+    color: $purple-800 !important;
+    font-size: 14px !important;
+    border-radius: 4px !important;
+    font-weight: 400 !important;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: $purple-600 !important;
+    font-size: 50px !important;
+}
+.slick-prev:before{
+    content: url("../images/leftarrow.svg") !important;
+}
+.slick-next:before{
+    content: url("../images/arrowright.svg") !important;
+}
+.slick-prev{
+    left:-50px !important
+}
+
+.slick-dots {
+    display: none !important;
+}
+.custom-arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    cursor: pointer;
+  
+    &.next {
+      right: -30px;
+    }
+  
+    &.prev {
+      left: -30px;
+    }
+  }
+  

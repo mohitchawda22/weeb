@@ -1,0 +1,16 @@
+
+@import "../../styles/colors.scss";
+
+.companies-section{
+    .companies-desc{
+        h2{
+            color: $white;
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 110.00000000000001%;
+        }
+    }
+    .companies-img{
+        padding: 80px 0px;
+    }
+}

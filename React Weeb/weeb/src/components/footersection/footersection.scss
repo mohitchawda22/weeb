@@ -1,0 +1,45 @@
+@import "../../styles/colors.scss";
+
+.footer-section{
+    background: $white;
+    padding: 80px 0px 0px 0px;
+    border-top: 2px solid $blue-gray-200 !important;
+    .footer-desc{
+        border-bottom: 1px solid $blue-gray-200 !important;
+        .footer-logo{
+            h4{
+                font-size: 32px;
+                font-weight: 700;
+                color: $black !important;
+            }
+        }
+        .footer-links{
+            h6{
+                font-size: 16px;
+                font-weight: 500;
+                color: $blue-gray-400 !important;
+                padding: 12px;
+            }
+            ul{
+                padding-left: 0;
+                li{
+                    padding: 12px;
+                    text-decoration: none;
+                    list-style: none;
+                    a{
+                        color: $blue-gray-900 !important;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .footer-trademark{
+        padding: 49px 0px;
+        p{
+            font-weight: 400;
+            color: $blue-gray-900 !important;
+        }
+        
+    }
+}

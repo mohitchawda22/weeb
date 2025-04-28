@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-slick": "^0.30.3",
+    "sass": "^1.87.0",
+    "slick-carousel": "^1.8.1",
     "weeb": "file:"
   },
   "devDependencies": {

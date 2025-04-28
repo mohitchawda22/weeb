@@ -1,0 +1,14 @@
+@import "../../styles/colors.scss";
+
+.join-btn{
+    padding: 12px 28px;
+    background: $purple-600;
+    border: 2px solid $purple-600;
+    border-radius: 8px;
+    color: $white;
+}
+
+.join-btn:hover{
+    background: $purple-400;
+    transition: 0.3s all ease-in-out;
+}
