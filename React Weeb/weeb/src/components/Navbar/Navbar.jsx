@@ -1,6 +1,8 @@
 import React from 'react'
 import "../../components/Navbar/Navbar.scss"
 import JoinButton from '../ui/JoinButton'
+import "../../constants/Navlinks"
+import { navItems } from '../../constants/Navlinks'
 
 function Navbar() {
 
@@ -8,7 +10,6 @@ function Navbar() {
         const navbar=document.getElementById("navbar")
         if (window.scrollY > 50){
           navbar.classList.add("scrolled");
-          console.log("scroll");
         }else{
           navbar.classList.remove("scrolled");
         }
@@ -36,18 +37,10 @@ function Navbar() {
                             <div className="offcanvas-body">
                                 <ul className="navbar-nav justify-content-start align-items-center flex-grow-1 pe-5 my-auto"
                                     id="nav-menu">
-                                    <li className="nav-item">
-                                        <a className="nav-link" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Solutions</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Pricing</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Resources</a>
-                                    </li>
+                                        {navItems.map((links,index)=>
+                                             (<li className="nav-item" key={index}>
+                                                <a className="nav-link" href="#">{links}</a>
+                                            </li>))}
                                 </ul>
                                 <ul className="d-flex justify-content-between align-items-center my-auto gap-4">
                                     <li className=""><a href="" className="text-decoration-none">Log In</a></li>

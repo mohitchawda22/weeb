@@ -5,6 +5,8 @@ import facebook from "../../assets/images/facebook.svg"
 import instagram from "../../assets/images/insta.svg"
 import x from "../../assets/images/x.svg"
 import linkedin from "../../assets/images/linkdin.svg"
+import { companyLinks, productLinks, resourceLinks, solutionLinks } from '../../constants/links'
+// import { footerIcons } from '../../constant/footerIcons'
 
 function FooterSection() {
   return (
@@ -20,37 +22,33 @@ function FooterSection() {
                         <div className="col-md-3 col-sm-6 mb-3">
                             <h6 className="text-uppercase">Product</h6>
                             <ul className="product-links" id="product-links">
-                                <li>Pricing</li>
-                                <li>Overview</li>
-                                <li>Browse</li>
-                                <li>Accessibility</li>
-                                <li>Five</li>
+                                {productLinks.map((links,index)=>(
+                                    <li key={index}><a href="">{links}</a></li>
+                                ))}
                             </ul>
                         </div>
                         <div className="col-md-3 col-sm-6 mb-3">
                             <h6 className="text-muted text-uppercase">Solutions</h6>
                             <ul className="solution-links" id="solution-links">
-                                <li>Brainstorming</li>
-                                <li>Ideation</li>
-                                <li>Wireframing</li>
-                                <li>Research</li>
+                                {solutionLinks.map((links,index)=>(
+                                    <li key={index}><a href="">{links}</a></li>
+                                ))}
                             </ul>
                         </div>
                         <div className="col-md-3 col-sm-6 mb-3">
                             <h6 className="text-muted text-uppercase">Resources</h6>
                             <ul className="resource-links" id="resource-links">
-                                <li>Help Center</li>
-                                <li>Blog</li>
-                                <li>Tutorials</li>
+                                {resourceLinks.map((links,index)=>(
+                                    <li key={index}><a href="">{links}</a></li>
+                                ))}
                             </ul>
                         </div>
                         <div className="col-md-3 col-sm-6 mb-3">
                             <h6 className="text-muted text-uppercase">Company</h6>
                             <ul className="company-links" id="company-links">
-                                <li>About</li>
-                                <li>Press</li>
-                                <li>Events</li>
-                                <li>Careers</li>
+                                {companyLinks.map((links,index)=>(
+                                    <li key={index}><a href="">{links}</a></li>
+                                ))}
                             </ul>
                         </div>
                     </div>
@@ -60,6 +58,9 @@ function FooterSection() {
             <div className="d-flex justify-content-between align-items-center flex-wrap footer-trademark">
                 <p className="">© 2023 Weeb, Inc. All rights reserved.</p>
                 <div className="d-flex gap-3 footer-icons" id="footer-icons">
+                    {/* {footerIcons.map((icon,index)=>(
+                        <a href={icon.href} title={icon.title} target="_blank" key={index}><img src={icon.icon} alt=""/></a>
+                    ))}             */}
                     <a href="https://www.youtube.com/" title="youtube" target="_blank"><img src={youtube} alt=""/></a>
                     <a href="https://www.facebook.com/" title="facebook" target="_blank"><img src={facebook} alt=""/></a>
                     <a href="https://x.com/" title="x" target="_blank"><img src={x} alt=""/></a>

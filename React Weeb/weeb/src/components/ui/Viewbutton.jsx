@@ -3,9 +3,9 @@ import "../ui/viewbutton.scss"
 
 function Viewbutton() {
   return (
-    <div>
-      <li><a href="" class="view-btn">View Demo</a></li>
-    </div>
+    <>
+      <li><a href="" className="view-btn">View Demo</a></li>
+    </>
   )
 }
 

@@ -31,7 +31,7 @@ function TestimonialSection() {
                 </div>
             </div>
         </div>
-    </section>/
+    </section>
     </>
   )
 }
